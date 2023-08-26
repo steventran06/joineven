@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 
 import evenLogo from '../../../../assets/images/evenLogo.png';
 

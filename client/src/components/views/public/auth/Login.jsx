@@ -190,7 +190,6 @@ const Login = (props) => {
   return (
     <>
       <Header />
-
       <AMBackdrop open={open} />
       <Container component="main" maxWidth="xs">
         <Box
@@ -210,7 +209,7 @@ const Login = (props) => {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5" sx={{ mb: 2 }}>
-            Sign in
+            Sign Up
           </Typography>
 
           <Box
