@@ -1,17 +1,7 @@
-/**
- *    © 2022 Abraham Mitiku
- *    Open Source MERN Dashboard Template
- * 
- */
-// -----------------------------------------------------------------
-
-/**
- * 
- * 
- */
 import React from 'react';
 import {Outlet} from 'react-router-dom';
 import AMFooter from './navigations/AMFooter';
+import PublicHeader from './navigations/PublicHeader';
 const PublicLayout = () =>{
 
   return (
@@ -31,6 +21,7 @@ const PublicLayout = () =>{
      * Views -> Auth -> [Login, Register, Forgot, Reset, Notify, Verify]
      */
     }
+    <PublicHeader />
     <Outlet />
     <AMFooter/>
    </>

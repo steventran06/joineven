@@ -104,7 +104,7 @@ const PrivateRoute = ({ children }) => {
   let location = useLocation();
   if (!(here_your_auth_provider)) {
     // redirecting to signin page or your default page
-    return <Navigate to="/auth/login" state={{ from: location }} replace />;
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
   return children;

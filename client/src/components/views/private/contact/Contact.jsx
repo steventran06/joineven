@@ -12,7 +12,7 @@ const Contact = () => {
    *  Your Contact page
    */
     React.useEffect(()=>{
-        $('title').html('Contact | GoWebBox');
+        $('title').html('Contact | Even');
         $('#nav-contact').css({
             backgroundColor: `#0099CC`,
             color: `#ffffff`

@@ -1,82 +1,43 @@
-/**
- *    © 2022 Abraham Mitiku
- *    Open Source MERN Dashboard Template
- * 
- */
-// -----------------------------------------------------------------
-/**
- *     AMFooter
- */
-//--------------------------------------------------------------------
-import { Box, Typography, Link, AppBar } from '@mui/material';
-import React from 'react';
+import * as React from "react";
+import { createTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
 
-const Footer = () => {
-
-    return (
-    <>
-    <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
-    <Box
-    sx={{
-    display: 'flex',
-    justifyContent: 'space-between',
-    mb:1,
-    p:2,
-    }}
-    >
-    <Box
-    sx={{
-
-    }}
-    >
-    <Typography
-    sx={{
-    fontWeight: 600
-    }}
-    >
-    © 2022 Abraham Mitiku
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary">
+      {"Copyright © "}
+      <Link color="inherit" href="https://joineven.io/">
+        Even
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
     </Typography>
-    </Box>
-    <Box
-    sx={{
-    display: 'flex'
-    }}
-    >
-        <Link href={`https://github.com/abriilo/MERN-Dashboard-Template`} target="_blank" >
-            <Typography
-            sx={{
-            fontWeight: 600
-            }}
-            color="secondary"
-            >
-            Documentation
-            </Typography>
-        </Link>
-        <Link  href={`https://abraham-mitiku.com`} target="_blank" sx={{ml: 3}}>
-            <Typography
-            sx={{
-            fontWeight: 600
-            }}
-            color="secondary"
-            >
-            About
-            </Typography>
-        </Link>
-        <Link  href={`https://abraham-mitiku.com/blog`} target="_blank" sx={{ml: 3}}>
-            <Typography
-            sx={{
-            fontWeight: 600
-            }}
-            color="secondary"
-            >
-            Blog
-            </Typography>
-        </Link>
-    </Box>
-    </Box>
-    </AppBar>
-    </>
-    );
-};
+  );
+}
 
-export default Footer;
+export default function StickyFooter() {
+  return (
+    <Box
+      component="footer"
+      sx={{
+        py: 3,
+        px: 2,
+        mt: "auto",
+        backgroundColor: (theme) =>
+          theme.palette.mode === "light"
+            ? theme.palette.grey[200]
+            : theme.palette.grey[800],
+      }}
+    >
+      <Container maxWidth="sm">
+        <Typography variant="body1">
+          My sticky footer can be found here.
+        </Typography>
+        <Copyright />
+      </Container>
+    </Box>
+  );
+}

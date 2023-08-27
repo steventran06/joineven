@@ -12,7 +12,7 @@ const Feedback = () => {
    *  Your Feedback page
    */
     React.useEffect(()=>{
-        $('title').html('Feedback | GoWebBox');
+        $('title').html('Feedback | Even');
         $('#nav-feedback').css({
             backgroundColor: `#0099CC`,
             color: `#ffffff`

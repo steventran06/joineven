@@ -44,7 +44,6 @@ import config from "../../../../constants/config";
 import TextField from "@mui/material/TextField";
 import { teal, blue, red } from "@mui/material/colors";
 import AMBackdrop from "../../../layouts/feedbacks/AMBackdrop";
-import Header from "../general/Header";
 
 const steps = ["Personal", "Password"];
 
@@ -364,7 +363,6 @@ const Register = (props) => {
   };
   return (
     <>
-      <Header />
       <AMBackdrop open={open} />
       <Container component="main" maxWidth="xs">
         <Box

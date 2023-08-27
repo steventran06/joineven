@@ -4,9 +4,9 @@ import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Toolbar from "@mui/material/Toolbar";
 
-import evenLogo from '../../../../assets/images/evenLogo.png';
+import evenLogo from '../../../assets/images/evenLogo.png';
 
-function Header() {
+function PublicHeader() {
   return (
     <AppBar
       position="static"
@@ -53,4 +53,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default PublicHeader;

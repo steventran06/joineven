@@ -10,7 +10,7 @@
  */
 import React from 'react';
 import {Outlet} from 'react-router-dom';
-import AMTopbar from './navigations/AMTopbar';
+import PrivateHeader from './navigations/PrivateHeader';
 import AMBottombar from './navigations/AMBottombar';
 
 const PrivateLayout = () =>{
@@ -25,7 +25,7 @@ const PrivateLayout = () =>{
      * 
      */
     }
-    <AMTopbar />
+    <PrivateHeader />
 
     {
     /**

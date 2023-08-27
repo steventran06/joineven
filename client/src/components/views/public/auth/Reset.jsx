@@ -104,7 +104,7 @@ const Reset = (props) => {
           setOpen(true);
           setOpenDrop(false);
           setTimeout(() => {
-            props.history.push("/auth/login");
+            props.history.push("/login");
           }, 2500);
         }
       })

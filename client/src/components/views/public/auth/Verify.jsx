@@ -36,7 +36,7 @@ const Verify = () => {
               },1500)
               setSuccess(true);
                setTimeout(()=>{
-                 window.location.href = '/auth/login'
+                 window.location.href = '/login'
                },2500)
            } 
        }).catch(err=>{

@@ -57,7 +57,7 @@ const Dashboard = props => {
   let profile = userData?userData: '';
 
     React.useEffect(()=>{
-      $('title').html('Dashboard | GoWebBox');
+      $('title').html('Dashboard | Even');
       $('#nav-dashboard').css({
           backgroundColor: `#0099CC`,
           color: `#ffffff`

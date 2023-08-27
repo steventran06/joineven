@@ -1,13 +1,3 @@
-/**
- *    © 2022 Abraham Mitiku
- *    Open Source MERN Dashboard Template
- *
- */
-// -----------------------------------------------------------------
-/**
- *     Forgot Password page - []
- */
-//--------------------------------------------------------------------
 import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -15,15 +5,11 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
-import InputLabel from "@mui/material/InputLabel";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import OutlinedInput from "@mui/material/OutlinedInput";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { verifyAccount } from "../../../../api/user.api";
 import AMBackdrop from "../../../layouts/feedbacks/AMBackdrop";
-
-import Header from "../general/Header";
 
 const Forgot = (props) => {
   const [open, setOpen] = React.useState(false);
@@ -60,7 +46,6 @@ const Forgot = (props) => {
 
   return (
     <>
-      <Header />
       <AMBackdrop open={open} />
       <Container component="main" maxWidth="xs">
         <Box

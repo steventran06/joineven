@@ -31,7 +31,6 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import AMAlert from "../../../layouts/feedbacks/AMAlert";
 import AMBackdrop from "../../../layouts/feedbacks/AMBackdrop";
 import Copyright from "../general/Copyright";
-import Header from "../general/Header";
 
 import config from "../../../../constants/config";
 import { login } from "../../../../api/user.api";
@@ -189,7 +188,6 @@ const Login = (props) => {
   const [alertOpen, setAlertOpen] = React.useState(true);
   return (
     <>
-      <Header />
       <AMBackdrop open={open} />
       <Container component="main" maxWidth="xs">
         <Box

@@ -31,7 +31,7 @@ const Order = () => {
       }
     };
     React.useEffect(()=>{
-        $('title').html('Order | GoWebBox');
+        $('title').html('Order | Even');
         $('#nav-order').css({
             backgroundColor: `#0099CC`,
             color: `#ffffff`

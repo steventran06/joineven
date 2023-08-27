@@ -56,27 +56,27 @@ element: <PublicLayout />,
 children: [
     { index: true, element: <Login /> },
     {
-        path: "/auth/login",
+        path: "/login",
         element: <Login />,
     },
     { 
-        path: "/auth/register", 
+        path: "/register", 
         element: <Register /> 
     },
     { 
-        path: "/auth/notification/:id", 
+        path: "/notification/:id", 
         element: <Notify /> 
     },
     { 
-        path: "/auth/forgot-password", 
+        path: "/forgot-password", 
         element: <Forgot /> 
     },
     { 
-        path: "/auth/reset-password", 
+        path: "/reset-password", 
         element: <Reset /> 
     },
     { 
-        path: "/auth/verify-email/:id/:token", 
+        path: "/verify-email/:id/:token", 
         element: <Verify /> 
     },
     ],

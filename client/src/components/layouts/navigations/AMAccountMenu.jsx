@@ -35,7 +35,7 @@ const AMAccountMenu = props => {
 
       window.localStorage.removeItem('access');
       setTimeout(()=>{
-        navigate('/auth/login')
+        navigate('/login')
       },300)
     }
     return (

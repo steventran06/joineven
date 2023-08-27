@@ -30,7 +30,7 @@ const Profile = props => {
       } 
     }).catch(err=>{ 
       //
-      navigate('/auth/login')
+      navigate('/login')
     })
     return;
   }
